@@ -1,4 +1,4 @@
-package com.pokemon_api.pokemon_api.dto;
+package com.pokemon_api.pokemon_api.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class CustomResponse {
 
     private int statusCode;
