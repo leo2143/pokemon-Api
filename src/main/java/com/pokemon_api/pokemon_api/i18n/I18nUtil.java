@@ -16,15 +16,12 @@ public class I18nUtil {
         this.messageSource = messageSource;
     }
 
-    public String getMessage(String code, Object... args){
+    public String getMessage(String code, Object... args) {
         if (code != null && code.startsWith("#{") && code.endsWith("}")) {
             code = code.substring(2, code.length() - 1);
         }
-        return messageSource.getMessage(code!=null?code:"", args, localHolder.getCurrentLocale());
+        return messageSource.getMessage(code != null ? code : "", args, localHolder.getCurrentLocale());
     }
 
-    public String getMessageEntityNotFound(Object id) {
-        return getMessage(I18nCodes.ENTITY_NOTFOUND_ID, id.toString());
-    }
 
 }

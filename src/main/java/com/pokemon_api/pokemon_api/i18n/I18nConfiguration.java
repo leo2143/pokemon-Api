@@ -18,7 +18,7 @@ import java.util.Locale;
 @Configuration
 public class I18nConfiguration implements WebMvcConfigurer {
 
-    private LocaleInterceptor localeInterceptor;
+    private final LocaleInterceptor localeInterceptor;
 
     @Value("${spring.messages.basename}")
     private String basename;

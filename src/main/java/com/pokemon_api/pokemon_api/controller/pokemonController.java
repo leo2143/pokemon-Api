@@ -1,6 +1,7 @@
 package com.pokemon_api.pokemon_api.controller;
 
-import com.pokemon_api.pokemon_api.dto.PokemonDto;
+import com.pokemon_api.pokemon_api.dto.create.PokemonCreateDto;
+import com.pokemon_api.pokemon_api.dto.update.PokemonUpdateDto;
 import com.pokemon_api.pokemon_api.i18n.I18nCodes;
 import com.pokemon_api.pokemon_api.services.PokemonService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,15 +24,15 @@ public class pokemonController {
     @PostMapping("")
     @Operation(summary = "#{" + I18nCodes.API_ACCOUNTING_CLEARING_REPORT_POST_SUMMARY + "}", description = "#{" + I18nCodes.API_ACCOUNTING_CLEARING_REPORT_POST_DESCRIPTION + "}")
     @ApiResponses(value = {@ApiResponse(responseCode = "201", description = "#{" + I18nCodes.API_RESPONSE_CREATED + "}"), @ApiResponse(responseCode = "404", description = "#{" + I18nCodes.API_RESPONSE_NOT_FOUND + "}"), @ApiResponse(responseCode = "500", description = "#{" + I18nCodes.API_RESPONSE_INTERNAL_SERVER_ERROR + "}")})
-    public ResponseEntity<?> create(@RequestBody PokemonDto create) {
+    public ResponseEntity<?> create(@RequestBody PokemonCreateDto create) {
         return this.service.create(create);
     }
 
     @PutMapping("")
     @Operation(summary = "#{" + I18nCodes.API_ACCOUNTING_CLEARING_REPORT_PUT_SUMMARY + "}", description = "#{" + I18nCodes.API_ACCOUNTING_CLEARING_REPORT_PUT_DESCRIPTION + "}")
     @ApiResponses(value = {@ApiResponse(responseCode = "201", description = "#{" + I18nCodes.API_RESPONSE_CREATED + "}"), @ApiResponse(responseCode = "404", description = "#{" + I18nCodes.API_RESPONSE_NOT_FOUND + "}"), @ApiResponse(responseCode = "500", description = "#{" + I18nCodes.API_RESPONSE_INTERNAL_SERVER_ERROR + "}")})
-    public ResponseEntity<?> update(@RequestBody PokemonDto update) {
-        return service.update(update);
+    public ResponseEntity<?> update(@RequestBody PokemonUpdateDto update) {
+        return service.update(update, update.getId());
     }
 
 
