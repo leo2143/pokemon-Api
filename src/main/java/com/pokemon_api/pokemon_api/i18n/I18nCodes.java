@@ -29,19 +29,35 @@ public class I18nCodes {
     public static final String API_ACCOUNTING_ACCOUNTS_DELETE_BY_ID_DESCRIPTION = "api.accounting.accounts.get.by.id.description";
     public static final String API_PARAM_ONLY_DELETE = "api.accounting.accounts.get.param.onlyDelete.description";
     //clearing report
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_SUMMARY = "api.accounting.clearing.report.get.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_DESCRIPTION = "api.accounting.clearing.report.get.description";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_ALL_SUMMARY = "api.accounting.clearing.report.get.all.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_ALL_DESCRIPTION = "api.accounting.clearing.report.get.all.description";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_PUT_SUMMARY = "api.accounting.clearing.report.put.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_PUT_DESCRIPTION = "api.accounting.clearing.report.put.description";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_POST_SUMMARY = "api.accounting.clearing.report.post.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_POST_DESCRIPTION = "api.accounting.clearing.report.post.description";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_BY_ID_SUMMARY = "api.accounting.clearing.report.get.by.id.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_GET_BY_ID_DESCRIPTION = "api.accounting.clearing.report.get.by.id.description";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_DELETE_BY_ID_SUMMARY = "api.accounting.clearing.report.get.by.id.sumary";
-    public static final String API_ACCOUNTING_CLEARING_REPORT_DELETE_BY_ID_DESCRIPTION = "api.accounting.clearing.report.get.by.id.description";
-    public static final String API_PARAM_CLEARING_REPORT_ONLY_DELETE = "api.accounting.accounts.get.param.onlyDelete.description";
+    public static final String API_POKEMON_GET_SUMMARY = "api.pokemon.get.sumary";
+    public static final String API_POKEMON_GET_DESCRIPTION = "api.pokemon.get.description";
+    public static final String API_POKEMON_GET_ALL_SUMMARY = "api.pokemon.get.all.sumary";
+    public static final String API_POKEMON_GET_ALL_DESCRIPTION = "api.pokemon.get.all.description";
+    public static final String API_POKEMON_PUT_SUMMARY = "api.pokemon.put.sumary";
+    public static final String API_POKEMON_PUT_DESCRIPTION = "api.pokemon.put.description";
+    public static final String API_POKEMON_POST_SUMMARY = "api.pokemon.post.sumary";
+    public static final String API_POKEMON_POST_DESCRIPTION = "api.pokemon.post.description";
+    public static final String API_POKEMON_GET_BY_ID_SUMMARY = "api.pokemon.get.by.id.sumary";
+    public static final String API_POKEMON_GET_BY_ID_DESCRIPTION = "api.pokemon.get.by.id.description";
+    public static final String API_POKEMON_DELETE_BY_ID_SUMMARY = "api.pokemon.delete.by.id.sumary";
+    public static final String API_POKEMON_DELETE_BY_ID_DESCRIPTION = "api.pokemon.delete.by.id.description";
+    public static final String API_POKEMON_ONLY_DELETE = "api.accounting.accounts.get.param.onlyDelete.description";
+
+    public static final String API_POKEMON_TYPE_GET_SUMMARY = "api.pokemon.type.get.sumary";
+    public static final String API_POKEMON_TYPE_GET_DESCRIPTION = "api.pokemon.type.get.description";
+    public static final String API_POKEMON_TYPE_GET_ALL_SUMMARY = "api.pokemon.type.get.all.sumary";
+    public static final String API_POKEMON_TYPE_GET_ALL_DESCRIPTION = "api.pokemon.type.get.all.description";
+    public static final String API_POKEMON_TYPE_PUT_SUMMARY = "api.pokemon.type.put.sumary";
+    public static final String API_POKEMON_TYPE_PUT_DESCRIPTION = "api.pokemon.type.put.description";
+    public static final String API_POKEMON_TYPE_POST_SUMMARY = "api.pokemon.type.post.sumary";
+    public static final String API_POKEMON_TYPE_POST_DESCRIPTION = "api.pokemon.type.post.description";
+    public static final String API_POKEMON_TYPE_GET_BY_ID_SUMMARY = "api.pokemon.type.get.by.id.sumary";
+    public static final String API_POKEMON_TYPE_GET_BY_ID_DESCRIPTION = "api.pokemon.type.get.by.id.description";
+    public static final String API_POKEMON_TYPE_DELETE_BY_ID_SUMMARY = "api.pokemon.type.delete.by.id.sumary";
+    public static final String API_POKEMON_TYPE_DELETE_BY_ID_DESCRIPTION = "api.pokemon.type.delete.by.id.description";
+    public static final String API_POKEMON_TYPE_ONLY_DELETE = "api.pokemon.type.get.param.onlyDelete.description";
+
+
     //clearing type
     public static final String API_ACCOUNTING_CLEARING_TYPE_GET_SUMMARY = "api.accounting.clearing.type.get.sumary";
     public static final String API_ACCOUNTING_CLEARING_TYPE_GET_DESCRIPTION = "api.accounting.clearing.type.get.description";
@@ -158,7 +174,7 @@ public class I18nCodes {
     // Mensajes del Api  
     public static final String CONTROLLER_ACCOUNTING_CONFIGURATION_DESCRIPTION = "controller.accounting.configuration.description";
     public static final String CONTROLLER_ACCOUNTING_ACCOUNTS_DESCRIPTION = "controller.accounting.accounting.accounts.description";
-    public static final String CONTROLLER_ACCOUNTING_CLEARING_REPORT_TYPE_DESCRIPTION = "controller.accounting.clearing.report.type.description";
+    public static final String CONTROLLER_POKEMON_TYPE_DESCRIPTION = "controller.pokemon.type.description";
 
     public static final String CONTROLLER_ACCOUNTING_CLEARING_TYPE_DESCRIPTION = "controller.accounting.clearing.type.description";
     public static final String CONTROLLER_ACCOUNTING_DATE_TYPE_DESCRIPTION = "controller.accounting.accounting.date.type.description";

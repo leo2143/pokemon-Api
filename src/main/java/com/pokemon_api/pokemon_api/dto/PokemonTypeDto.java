@@ -11,5 +11,4 @@ public class PokemonTypeDto {
 
     private String name;
 
-    private Set<PokemonDto> pokemons;
 }
