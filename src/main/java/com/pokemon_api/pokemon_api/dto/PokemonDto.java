@@ -16,7 +16,9 @@ public class PokemonDto {
 
     private Double height;
 
-    private Set<PokemonTypeDto> types = new HashSet<>();
+    private Set<TypeDto> types = new HashSet<>();
 
     private PokemonDto evolution;
+
+    private BaseStatisticsDto baseStatistics;
 }

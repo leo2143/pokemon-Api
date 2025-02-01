@@ -17,4 +17,6 @@ public class PokemonCreateDto {
     private Set<Long> typeIds = new HashSet<>();
 
     private Long evolutionId;
+
+    private BaseStatisticsCreateDto baseStatistics;
 }

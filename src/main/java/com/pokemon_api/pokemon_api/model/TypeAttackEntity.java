@@ -5,22 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
-
 @Entity
-@Table(name = "pokemon_type")
+@Table(name = "type_attack")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PokemonTypeEntity {
+public class TypeAttackEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "type_id")
+    @Column(name = "type_attack_id")
     private Long id;
 
     private String name;
 
-    @ManyToMany(mappedBy = "types")
-    private Set<PokemonEntity> pokemons;
+    @OneToOne(mappedBy = "typeAttack", cascade = CascadeType.ALL)
+    private TypeEntity pokemonType;
 }

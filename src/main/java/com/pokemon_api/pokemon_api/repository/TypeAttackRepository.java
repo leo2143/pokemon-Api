@@ -1,9 +1,9 @@
 package com.pokemon_api.pokemon_api.repository;
 
-import com.pokemon_api.pokemon_api.model.PokemonTypeEntity;
+import com.pokemon_api.pokemon_api.model.TypeAttackEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PokemonTypeRepository extends JpaRepository<PokemonTypeEntity, Long> {
+public interface TypeAttackRepository extends JpaRepository<TypeAttackEntity, Long> {
 }

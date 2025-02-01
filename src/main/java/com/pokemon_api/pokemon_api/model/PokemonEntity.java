@@ -32,9 +32,12 @@ public class PokemonEntity {
             joinColumns = @JoinColumn(name = "pokedex_number"),
             inverseJoinColumns = @JoinColumn(name = "types")
     )
-    private Set<PokemonTypeEntity> types = new HashSet<>();
+    private Set<TypeEntity> types = new HashSet<>();
 
     @JoinColumn(name = "evolution_id")
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private PokemonEntity evolution;
+
+    @OneToOne(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
+    private BaseStatisticsEntity baseStatistics;
 }
