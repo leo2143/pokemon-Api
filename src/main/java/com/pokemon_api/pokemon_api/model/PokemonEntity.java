@@ -38,6 +38,6 @@ public class PokemonEntity {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private PokemonEntity evolution;
 
-    @OneToOne(mappedBy = "pokemon", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Embedded
     private BaseStatisticsEntity baseStatistics;
 }
