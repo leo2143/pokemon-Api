@@ -100,5 +100,49 @@ public class I18nCodes {
     public static final String API_TYPE_STONE_EVOLUTION_DELETE_BY_ID_SUMMARY = "api.type.stone.evolution.delete.by.id.sumary";
     public static final String API_TYPE_STONE_EVOLUTION_DELETE_BY_ID_DESCRIPTION = "api.type.stone.evolution.delete.by.id.description";
 
+    public static final String API_FORM_LEARN_GET_ALL_SUMMARY = "api.form.learn.get.all.sumary";
+    public static final String API_FORM_LEARN_GET_ALL_DESCRIPTION = "api.form.learn.get.all.description";
+    public static final String API_FORM_LEARN_PUT_SUMMARY = "api.form.learn.put.sumary";
+    public static final String API_FORM_LEARN_PUT_DESCRIPTION = "api.form.learn.put.description";
+    public static final String API_FORM_LEARN_POST_SUMMARY = "api.form.learn.post.sumary";
+    public static final String API_FORM_LEARN_POST_DESCRIPTION = "api.form.learn.post.description";
+    public static final String API_FORM_LEARN_GET_BY_ID_SUMMARY = "api.form.learn.get.by.id.sumary";
+    public static final String API_FORM_LEARN_GET_BY_ID_DESCRIPTION = "api.form.learn.get.by.id.description";
+    public static final String API_FORM_LEARN_DELETE_BY_ID_SUMMARY = "api.form.learn.delete.by.id.sumary";
+    public static final String API_FORM_LEARN_DELETE_BY_ID_DESCRIPTION = "api.form.learn.delete.by.id.description";
+
+    public static final String API_MT_LEARN_GET_ALL_SUMMARY = "api.mt.learn.get.all.sumary";
+    public static final String API_MT_LEARN_GET_ALL_DESCRIPTION = "api.mt.learn.get.all.description";
+    public static final String API_MT_LEARN_PUT_SUMMARY = "api.mt.learn.put.sumary";
+    public static final String API_MT_LEARN_PUT_DESCRIPTION = "api.mt.learn.put.description";
+    public static final String API_MT_LEARN_POST_SUMMARY = "api.mt.learn.post.sumary";
+    public static final String API_MT_LEARN_POST_DESCRIPTION = "api.mt.learn.post.description";
+    public static final String API_MT_LEARN_GET_BY_ID_SUMMARY = "api.mt.learn.get.by.id.sumary";
+    public static final String API_MT_LEARN_GET_BY_ID_DESCRIPTION = "api.mt.learn.get.by.id.description";
+    public static final String API_MT_LEARN_DELETE_BY_ID_SUMMARY = "api.mt.learn.delete.by.id.sumary";
+    public static final String API_MT_LEARN_DELETE_BY_ID_DESCRIPTION = "api.mt.learn.delete.by.id.description";
+
+    public static final String API_MO_LEARN_GET_ALL_SUMMARY = "api.mo.learn.get.all.sumary";
+    public static final String API_MO_LEARN_GET_ALL_DESCRIPTION = "api.mo.learn.get.all.description";
+    public static final String API_MO_LEARN_PUT_SUMMARY = "api.mo.learn.put.sumary";
+    public static final String API_MO_LEARN_PUT_DESCRIPTION = "api.mo.learn.put.description";
+    public static final String API_MO_LEARN_POST_SUMMARY = "api.mo.learn.post.sumary";
+    public static final String API_MO_LEARN_POST_DESCRIPTION = "api.mo.learn.post.description";
+    public static final String API_MO_LEARN_GET_BY_ID_SUMMARY = "api.mo.learn.get.by.id.sumary";
+    public static final String API_MO_LEARN_GET_BY_ID_DESCRIPTION = "api.mo.learn.get.by.id.description";
+    public static final String API_MO_LEARN_DELETE_BY_ID_SUMMARY = "api.mo.learn.delete.by.id.sumary";
+    public static final String API_MO_LEARN_DELETE_BY_ID_DESCRIPTION = "api.mo.learn.delete.by.id.description";
+
+    public static final String API_LEVEL_LEARN_GET_ALL_SUMMARY = "api.level.learn.get.all.sumary";
+    public static final String API_LEVEL_LEARN_GET_ALL_DESCRIPTION = "api.level.learn.get.all.description";
+    public static final String API_LEVEL_LEARN_PUT_SUMMARY = "api.level.learn.put.sumary";
+    public static final String API_LEVEL_LEARN_PUT_DESCRIPTION = "api.level.learn.put.description";
+    public static final String API_LEVEL_LEARN_POST_SUMMARY = "api.level.learn.post.sumary";
+    public static final String API_LEVEL_LEARN_POST_DESCRIPTION = "api.level.learn.post.description";
+    public static final String API_LEVEL_LEARN_GET_BY_ID_SUMMARY = "api.level.learn.get.by.id.sumary";
+    public static final String API_LEVEL_LEARN_GET_BY_ID_DESCRIPTION = "api.level.learn.get.by.id.description";
+    public static final String API_LEVEL_LEARN_DELETE_BY_ID_SUMMARY = "api.level.learn.delete.by.id.sumary";
+    public static final String API_LEVEL_LEARN_DELETE_BY_ID_DESCRIPTION = "api.level.learn.delete.by.id.description";
+
 
 }

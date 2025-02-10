@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("types")
 @RestController
 @AllArgsConstructor
-@Tag(name = "types Api", description = "Api orientada a brindar informacion acerca de los tipos de pokemons")
+@Tag(name = "Types Api", description = "Api orientada a brindar informacion acerca de los tipos de pokemons")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.PATCH})
 public class TypesController {
 

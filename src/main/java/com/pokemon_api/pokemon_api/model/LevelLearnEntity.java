@@ -10,18 +10,17 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "nivel_evolucion")
+@Table(name = "level_learn")
 @Data
-@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
-public class LevelEvolutionEntity extends FormEvolutionEntity {
+public class LevelLearnEntity extends FormLearnEntity {
 
     private int level;
 
     @PrePersist
     public void prePersist() {
-        setFormEvolution("Nivel");
+        setFormLearn("Level");
     }
-
 }
