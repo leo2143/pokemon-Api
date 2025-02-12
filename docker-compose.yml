@@ -1,0 +1,42 @@
+services:
+  pokemon-api:
+    image: pokemon-api
+    container_name: pokemon-api-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
+      - ~/.m2:/root/.m2
+
+    ports:
+      - "8080:8080"
+    command: mvn spring-boot:run
+    networks:
+      - pokemon-network
+    depends_on:
+      - mysql
+    environment:
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_PROFILES_ACTIVE: mysql
+
+  mysql:
+    image: mysql
+    container_name: mysql_database
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: PokemonApiDatabase
+      MYSQL_USER: leonardo
+      MYSQL_PASSWORD: Leonardoorellana2
+    ports:
+      - "3307:3306"
+    networks:
+      - pokemon-network
+    volumes:
+      - mysql-volume:/var/lib/mysql
+networks:
+  pokemon-network:
+volumes:
+  mysql-volume:
+
