@@ -21,4 +21,9 @@ public class SecondaryEffectsMapperHelper {
                 new HashSet<>(repository.findAllById(typeIds)) : null;
     }
 
+    @Named("KeyToSecondaryEffectsEntity")
+    public SecondaryEffectsEntity KeyToSecondaryEffectsEntity(Long id) {
+        return (id != null) ? repository.findById(id).orElse(null) : null;
+    }
+
 }

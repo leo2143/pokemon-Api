@@ -11,18 +11,18 @@ import org.mapstruct.*;
 import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedTargetPolicy = ReportingPolicy.WARN,
-        uses = {SecondaryEffectsMapper.class, SecondaryEffectsMapperHelper.class})
+        uses = {})
 public abstract class MovementsMapper extends DefaultMapper<MovementsDto, MovementsEntity, MovementsCreateDto, MovementsUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "movementSecondaryEffects", ignore = true)
+    @Mapping(target = "movementsSecondaryEffects", ignore = true)
     public abstract MovementsEntity fromCreateDtoToEntity(MovementsCreateDto createDto);
 
     public abstract MovementsDto ToDto(MovementsEntity entity);
 
     public abstract List<MovementsDto> toListDto(List<MovementsEntity> entityList);
 
-    @Mapping(target = "movementSecondaryEffects", ignore = true)
+    @Mapping(target = "movementsSecondaryEffects", ignore = true)
     public abstract MovementsEntity merge(@MappingTarget MovementsEntity entity, MovementsUpdateDto update);
 
 

@@ -23,6 +23,5 @@ public class MovementsCreateDto {
 
     private int priority;
 
-    private int probability;
 
 }

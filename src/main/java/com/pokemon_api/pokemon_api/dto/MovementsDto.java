@@ -18,8 +18,6 @@ public class MovementsDto {
 
     private String description;
 
-    private Set<MovementsSecondaryEffectsDto> movementSecondaryEffects;
-
     private int pp;
 
     private int priority;

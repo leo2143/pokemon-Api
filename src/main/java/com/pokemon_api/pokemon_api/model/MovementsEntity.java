@@ -29,7 +29,7 @@ public class MovementsEntity {
     private String description;
 
     @OneToMany(mappedBy = "movements")
-    private Set<MovementsSecondaryEffectsEntity> movementSecondaryEffects = new HashSet<>();
+    private Set<MovementsSecondaryEffectsEntity> movementsSecondaryEffects = new HashSet<>();
 
     private int pp;
 

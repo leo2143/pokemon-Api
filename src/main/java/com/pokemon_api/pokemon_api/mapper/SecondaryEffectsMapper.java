@@ -11,10 +11,10 @@ import org.mapstruct.*;
 import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedTargetPolicy = ReportingPolicy.WARN,
-        uses = {SecondaryEffectsMapperHelper.class})
+        uses = {})
 public abstract class SecondaryEffectsMapper extends DefaultMapper<SecondaryEffectsDto, SecondaryEffectsEntity, SecondaryEffectsCreateDto, SecondaryEffectsUpdateDto> {
 
-    @Mapping(target = "movementSecondaryEffects", ignore = true)
+    @Mapping(target = "movementsSecondaryEffects", ignore = true)
     @Mapping(target = "id", ignore = true)
     public abstract SecondaryEffectsEntity fromCreateDtoToEntity(SecondaryEffectsCreateDto createDto);
 
@@ -22,7 +22,7 @@ public abstract class SecondaryEffectsMapper extends DefaultMapper<SecondaryEffe
 
     public abstract List<SecondaryEffectsDto> toListDto(List<SecondaryEffectsEntity> entityList);
 
-    @Mapping(target = "movementSecondaryEffects", ignore = true)
+    @Mapping(target = "movementsSecondaryEffects", ignore = true)
     public abstract SecondaryEffectsEntity merge(@MappingTarget SecondaryEffectsEntity entity, SecondaryEffectsUpdateDto update);
 
 

@@ -23,5 +23,5 @@ public class SecondaryEffectsEntity {
     private String secondaryEffect;
 
     @OneToMany(mappedBy = "secondaryEffects")
-    private Set<MovementsSecondaryEffectsEntity> movementSecondaryEffects = new HashSet<>();
+    private Set<MovementsSecondaryEffectsEntity> movementsSecondaryEffects = new HashSet<>();
 }
