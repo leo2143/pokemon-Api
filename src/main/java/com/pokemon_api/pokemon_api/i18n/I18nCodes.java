@@ -144,5 +144,38 @@ public class I18nCodes {
     public static final String API_LEVEL_LEARN_DELETE_BY_ID_SUMMARY = "api.level.learn.delete.by.id.sumary";
     public static final String API_LEVEL_LEARN_DELETE_BY_ID_DESCRIPTION = "api.level.learn.delete.by.id.description";
 
+    public static final String API_SECONDARY_EFFECTS_GET_ALL_SUMMARY = "api.secondary.effects.get.all.sumary";
+    public static final String API_SECONDARY_EFFECTS_GET_ALL_DESCRIPTION = "api.secondary.effects.get.all.description";
+    public static final String API_SECONDARY_EFFECTS_PUT_SUMMARY = "api.secondary.effects.put.sumary";
+    public static final String API_SECONDARY_EFFECTS_PUT_DESCRIPTION = "api.secondary.effects.put.description";
+    public static final String API_SECONDARY_EFFECTS_POST_SUMMARY = "api.secondary.effects.post.sumary";
+    public static final String API_SECONDARY_EFFECTS_POST_DESCRIPTION = "api.secondary.effects.post.description";
+    public static final String API_SECONDARY_EFFECTS_GET_BY_ID_SUMMARY = "api.secondary.effects.get.by.id.sumary";
+    public static final String API_SECONDARY_EFFECTS_GET_BY_ID_DESCRIPTION = "api.secondary.effects.get.by.id.description";
+    public static final String API_SECONDARY_EFFECTS_DELETE_BY_ID_SUMMARY = "api.secondary.effects.delete.by.id.sumary";
+    public static final String API_SECONDARY_EFFECTS_DELETE_BY_ID_DESCRIPTION = "api.secondary.effects.delete.by.id.description";
+
+    public static final String API_MOVEMENTS_GET_ALL_SUMMARY = "api.movements.get.all.sumary";
+    public static final String API_MOVEMENTS_GET_ALL_DESCRIPTION = "api.movements.get.all.description";
+    public static final String API_MOVEMENTS_PUT_SUMMARY = "api.movements.put.sumary";
+    public static final String API_MOVEMENTS_PUT_DESCRIPTION = "api.movements.put.description";
+    public static final String API_MOVEMENTS_POST_SUMMARY = "api.movements.post.sumary";
+    public static final String API_MOVEMENTS_POST_DESCRIPTION = "api.movements.post.description";
+    public static final String API_MOVEMENTS_GET_BY_ID_SUMMARY = "api.movements.get.by.id.sumary";
+    public static final String API_MOVEMENTS_GET_BY_ID_DESCRIPTION = "api.movements.get.by.id.description";
+    public static final String API_MOVEMENTS_DELETE_BY_ID_SUMMARY = "api.movements.delete.by.id.sumary";
+    public static final String API_MOVEMENTS_DELETE_BY_ID_DESCRIPTION = "api.movements.delete.by.id.description";
+
+
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_GET_ALL_SUMMARY = "api.movements.secondary.effects.get.all.sumary";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_GET_ALL_DESCRIPTION = "api.movements.secondary.effects.get.all.description";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_PUT_SUMMARY = "api.movements.secondary.effects.put.sumary";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_PUT_DESCRIPTION = "api.movements.secondary.effects.put.description";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_POST_SUMMARY = "api.movements.secondary.effects.post.sumary";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_POST_DESCRIPTION = "api.movements.secondary.effects.post.description";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_GET_BY_ID_SUMMARY = "api.movements.secondary.effects.get.by.id.sumary";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_GET_BY_ID_DESCRIPTION = "api.movements.secondary.effects.get.by.id.description";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_DELETE_BY_ID_SUMMARY = "api.movements.secondary.effects.delete.by.id.sumary";
+    public static final String API_MOVEMENTS_SECONDARY_EFFECTS_DELETE_BY_ID_DESCRIPTION = "api.movements.secondary.effects.delete.by.id.description";
 
 }
