@@ -31,6 +31,7 @@ public class PokemonEntity {
             name = "pokemon_types",
             joinColumns = @JoinColumn(name = "pokedex_number"),
             inverseJoinColumns = @JoinColumn(name = "types")
+
     )
     private Set<TypeEntity> types = new HashSet<>();
 
@@ -40,4 +41,6 @@ public class PokemonEntity {
 
     @Embedded
     private BaseStatisticsEntity baseStatistics;
+
+
 }
