@@ -4,12 +4,13 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.i18n.LocaleContextHolder;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Locale;
 
 @Service
@@ -75,7 +76,7 @@ public abstract class DefaultService<D, E, C, U, T> {
                 customResponse = new CustomResponse(HttpStatus.OK.value(), getI8nMessage(UPDATE_OK, null), dto);
                 return ResponseEntity.ok(customResponse);
             } else {
-                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND, new Object[] {id} ), null);
+                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND, new Object[]{id}), null);
                 return ResponseEntity.ok(customResponse);
 
             }
@@ -96,7 +97,7 @@ public abstract class DefaultService<D, E, C, U, T> {
                 customResponse = new CustomResponse(HttpStatus.OK.value(), getI8nMessage(DELETED_OK, null), null);
                 return ResponseEntity.ok(customResponse);
             } else {
-                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND,  new Object[] {id} ),null);
+                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND, new Object[]{id}), null);
                 return ResponseEntity.ok(customResponse);
             }
         } catch (Exception e) {
@@ -115,7 +116,7 @@ public abstract class DefaultService<D, E, C, U, T> {
                 customResponse = new CustomResponse(HttpStatus.OK.value(), getI8nMessage(FOUND_OK, null), dto);
                 return ResponseEntity.ok(customResponse);
             } else {
-                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND,  new Object[] {id} ), null);
+                customResponse = new CustomResponse(HttpStatus.NOT_FOUND.value(), getI8nMessage(NOT_FOUND, new Object[]{id}), null);
                 return ResponseEntity.ok(customResponse);
             }
         } catch (Exception e) {
@@ -124,13 +125,13 @@ public abstract class DefaultService<D, E, C, U, T> {
         }
     }
 
-    public ResponseEntity<?> findAll() {
+    public ResponseEntity<?> findAll(Pageable pageable) {
 
         CustomResponse customResponse;
         try {
-            List<E> entity = getRepository().findAll();
+            Page<E> entity = getRepository().findAll(pageable);
             if (entity != null) {
-                List<D> dto = ((DtoMapper<E, D>) getMapper()).toListDto(entity);
+                PageDto<D> dto = ((DtoMapper<E, D>) getMapper()).toPageDto(entity);
                 customResponse = new CustomResponse(HttpStatus.OK.value(), getI8nMessage(ALL_FOUND_OK, null), dto);
                 return ResponseEntity.ok(customResponse);
             } else {
