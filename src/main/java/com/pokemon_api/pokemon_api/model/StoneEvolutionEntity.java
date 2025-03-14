@@ -20,9 +20,4 @@ public class StoneEvolutionEntity extends FormEvolutionEntity {
     private TypeStoneEvolutionEntity typeStoneEvolution;
 
 
-    @PrePersist
-    public void prePersist() {
-        setFormEvolution("piedra");
-    }
-
 }

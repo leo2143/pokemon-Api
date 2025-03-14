@@ -18,6 +18,8 @@ public abstract class MovementsSecondaryEffectsMapper extends DefaultMapper<Move
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "movements", source = "movementsId", qualifiedByName = "KeyToMovementsEntity")
     @Mapping(target = "secondaryEffects", source = "secondaryEffectsId", qualifiedByName = "KeyToSecondaryEffectsEntity")
+    @Mapping(target = "pokemonMovementForms", ignore = true)
+
     public abstract MovementsSecondaryEffectsEntity fromCreateDtoToEntity(MovementsSecondaryEffectsCreateDto createDto);
 
     public abstract MovementsSecondaryEffectsDto ToDto(MovementsSecondaryEffectsEntity entity);
@@ -26,6 +28,7 @@ public abstract class MovementsSecondaryEffectsMapper extends DefaultMapper<Move
 
     @Mapping(target = "movements", source = "movementsId", qualifiedByName = "KeyToMovementsEntity")
     @Mapping(target = "secondaryEffects", source = "secondaryEffectsId", qualifiedByName = "KeyToSecondaryEffectsEntity")
+    @Mapping(target = "pokemonMovementForms", ignore = true)
     public abstract MovementsSecondaryEffectsEntity merge(@MappingTarget MovementsSecondaryEffectsEntity entity, MovementsSecondaryEffectsUpdateDto update);
 
 

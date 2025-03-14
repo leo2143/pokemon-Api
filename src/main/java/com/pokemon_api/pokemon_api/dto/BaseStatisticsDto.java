@@ -5,14 +5,14 @@ import lombok.Data;
 @Data
 public class BaseStatisticsDto {
 
-    private String ps;
+    private int ps;
 
-    private String attack;
+    private int attack;
 
-    private String defense;
+    private int defense;
 
-    private String special;
+    private int special;
 
-    private String speed;
+    private int speed;
 
 }

@@ -14,6 +14,7 @@ import java.util.List;
 public abstract class FormLearnMapper extends DefaultMapper<FormLearnDto, FormLearnEntity, FormLearnCreateDto, FormLearnUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms",ignore = true)
     public abstract FormLearnEntity fromCreateDtoToEntity(FormLearnCreateDto createDto);
 
     public abstract FormLearnDto ToDto(FormLearnEntity entity);
@@ -21,6 +22,7 @@ public abstract class FormLearnMapper extends DefaultMapper<FormLearnDto, FormLe
     public abstract List<FormLearnDto> toListDto(List<FormLearnEntity> entityList);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms",ignore = true)
     public abstract FormLearnEntity merge(@MappingTarget FormLearnEntity entity, FormLearnUpdateDto update);
 
 }

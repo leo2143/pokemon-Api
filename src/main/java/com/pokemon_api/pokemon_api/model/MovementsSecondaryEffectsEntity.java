@@ -27,4 +27,7 @@ public class MovementsSecondaryEffectsEntity {
     private SecondaryEffectsEntity secondaryEffects;
 
     private int probability;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy ="movementsSecondaryEffects" )
+    private List<PokemonMovementForm> pokemonMovementForms;
 }

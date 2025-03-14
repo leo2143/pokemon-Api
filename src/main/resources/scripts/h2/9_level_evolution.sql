@@ -1,0 +1,25 @@
+
+insert into level_evolution values (5, 7);
+insert into level_evolution values (6, 10);
+insert into level_evolution values (7, 16);
+insert into level_evolution values (8, 18);
+insert into level_evolution values (9, 20);
+insert into level_evolution values (10, 22);
+insert into level_evolution values (11, 32);
+insert into level_evolution values (12, 36);
+insert into level_evolution values (14, 21);
+insert into level_evolution values (16, 24);
+insert into level_evolution values (17, 31);
+insert into level_evolution values (18, 26);
+insert into level_evolution values (19, 28);
+insert into level_evolution values (20, 33);
+insert into level_evolution values (21, 25);
+insert into level_evolution values (22, 30);
+insert into level_evolution values (23, 40);
+insert into level_evolution values (24, 37);
+insert into level_evolution values (25, 34);
+insert into level_evolution values (26, 38);
+insert into level_evolution values (27, 35);
+insert into level_evolution values (28, 42);
+insert into level_evolution values (29, 55);
+ALTER TABLE level_evolution ALTER COLUMN id RESTART WITH 30;

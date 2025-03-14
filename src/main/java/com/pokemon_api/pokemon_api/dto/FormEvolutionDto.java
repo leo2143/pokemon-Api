@@ -10,8 +10,8 @@ public class FormEvolutionDto {
     @Schema(description = "id movimientos secundarios")
     private Long id;
 
-    @Schema(description = "forma de evolucion")
-    private String formEvolution;
+    private TypeEvolutionDto typeEvolution;
+
 
 
 }

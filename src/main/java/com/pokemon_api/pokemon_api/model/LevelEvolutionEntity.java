@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "nivel_evolucion")
+@Table(name = "level_evolution")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
@@ -19,9 +19,6 @@ public class LevelEvolutionEntity extends FormEvolutionEntity {
 
     private int level;
 
-    @PrePersist
-    public void prePersist() {
-        setFormEvolution("Nivel");
-    }
+
 
 }

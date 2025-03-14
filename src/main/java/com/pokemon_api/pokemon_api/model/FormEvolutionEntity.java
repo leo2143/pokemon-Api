@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "form_evolution")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -17,5 +20,10 @@ public class FormEvolutionEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String formEvolution;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "type_evolution_id")
+    private TypeEvolutionEntity typeEvolution;
+
+    @ManyToMany(mappedBy = "formEvolutions")
+    private List<PokemonEntity> pokemons = new ArrayList<>();
 }

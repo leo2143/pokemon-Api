@@ -24,7 +24,7 @@ public class TypeEntity {
     @ManyToMany(mappedBy = "types")
     private Set<PokemonEntity> pokemons;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "type_attack_id", unique = true)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "type_attack_id")
     private TypeAttackEntity typeAttack;
 }

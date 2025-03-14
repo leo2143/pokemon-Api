@@ -14,6 +14,8 @@ import java.util.List;
 public abstract class MtLearnMapper extends DefaultMapper<MtLearnDto, MtLearnEntity, MtLearnCreateDto, MtLearnUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms",ignore = true)
+
     public abstract MtLearnEntity fromCreateDtoToEntity(MtLearnCreateDto createDto);
 
     public abstract MtLearnDto ToDto(MtLearnEntity entity);
@@ -21,6 +23,7 @@ public abstract class MtLearnMapper extends DefaultMapper<MtLearnDto, MtLearnEnt
     public abstract List<MtLearnDto> toListDto(List<MtLearnEntity> entityList);
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms",ignore = true)
     public abstract MtLearnEntity merge(@MappingTarget MtLearnEntity entity, MtLearnUpdateDto update);
 
 

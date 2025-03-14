@@ -5,22 +5,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "form_learn")
+@Table(name = "type_evolution")
 @Inheritance(strategy = InheritanceType.JOINED)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FormLearnEntity {
+public class TypeEvolutionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "type_evolution_id")
     private Long id;
 
-    private String formLearn;
+    @Column(name = "type_evolution")
+    private String typeEvolution;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "formLearn")
-    List<PokemonMovementForm> pokemonMovementForms;
 }

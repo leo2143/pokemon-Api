@@ -14,12 +14,14 @@ import java.util.List;
 public abstract class MoLearnMapper extends DefaultMapper<MoLearnDto, MoLearnEntity, MoLearnCreateDto, MoLearnUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms", ignore = true)
     public abstract MoLearnEntity fromCreateDtoToEntity(MoLearnCreateDto createDto);
 
     public abstract MoLearnDto ToDto(MoLearnEntity entity);
 
     public abstract List<MoLearnDto> toListDto(List<MoLearnEntity> entityList);
 
+    @Mapping(target = "pokemonMovementForms", ignore = true)
     @Mapping(target = "id", ignore = true)
     public abstract MoLearnEntity merge(@MappingTarget MoLearnEntity entity, MoLearnUpdateDto update);
 

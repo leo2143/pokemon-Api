@@ -7,7 +7,7 @@ import lombok.Data;
 public class FormEvolutionCreateDto {
 
     @JsonIgnore
-    private String formEvolution;
+    private String typeEvolutionName;
 
 
 }

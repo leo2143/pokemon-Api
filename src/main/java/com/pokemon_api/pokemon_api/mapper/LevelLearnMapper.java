@@ -14,12 +14,14 @@ import java.util.List;
 public abstract class LevelLearnMapper extends DefaultMapper<LevelLearnDto, LevelLearnEntity, LevelLearnCreateDto, LevelLearnUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "pokemonMovementForms",ignore = true)
     public abstract LevelLearnEntity fromCreateDtoToEntity(LevelLearnCreateDto createDto);
 
     public abstract LevelLearnDto ToDto(LevelLearnEntity entity);
 
     public abstract List<LevelLearnDto> toListDto(List<LevelLearnEntity> entityList);
 
+    @Mapping(target = "pokemonMovementForms",ignore = true)
     @Mapping(target = "id", ignore = true)
     public abstract LevelLearnEntity merge(@MappingTarget LevelLearnEntity entity, LevelLearnUpdateDto update);
 

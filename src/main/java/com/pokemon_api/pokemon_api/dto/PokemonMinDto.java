@@ -6,19 +6,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
-public class PokemonDto {
+public class PokemonMinDto {
 
     private Long id;
 
     private String name;
 
-    private Double weight;
-
-    private Double height;
-
     private Set<TypeDto> types = new HashSet<>();
-
-    private PokemonMinDto evolution;
-
-    private BaseStatisticsDto baseStatistics;
 }
