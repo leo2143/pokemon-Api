@@ -4,15 +4,17 @@ import com.pokemon_api.pokemon_api.common.DefaultMapper;
 import com.pokemon_api.pokemon_api.dto.MoLearnDto;
 import com.pokemon_api.pokemon_api.dto.create.MoLearnCreateDto;
 import com.pokemon_api.pokemon_api.dto.update.MoLearnUpdateDto;
+import com.pokemon_api.pokemon_api.mapper.helpers.TypeFormLearnMapperHelper;
 import com.pokemon_api.pokemon_api.model.MoLearnEntity;
 import org.mapstruct.*;
 
 import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedTargetPolicy = ReportingPolicy.WARN,
-        uses = {})
+        uses = {TypeFormLearnMapper.class, TypeFormLearnMapperHelper.class})
 public abstract class MoLearnMapper extends DefaultMapper<MoLearnDto, MoLearnEntity, MoLearnCreateDto, MoLearnUpdateDto> {
 
+    @Mapping(target = "typeLearnForm", source = "typeLearnFormId",qualifiedByName = "KeyToEntity")
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "pokemonMovementForms", ignore = true)
     public abstract MoLearnEntity fromCreateDtoToEntity(MoLearnCreateDto createDto);
@@ -21,6 +23,7 @@ public abstract class MoLearnMapper extends DefaultMapper<MoLearnDto, MoLearnEnt
 
     public abstract List<MoLearnDto> toListDto(List<MoLearnEntity> entityList);
 
+    @Mapping(target = "typeLearnForm", source = "typeLearnFormId",qualifiedByName = "KeyToEntity")
     @Mapping(target = "pokemonMovementForms", ignore = true)
     @Mapping(target = "id", ignore = true)
     public abstract MoLearnEntity merge(@MappingTarget MoLearnEntity entity, MoLearnUpdateDto update);

@@ -19,8 +19,4 @@ public class LevelLearnEntity extends FormLearnEntity {
 
     private int level;
 
-    @PrePersist
-    public void prePersist() {
-        setFormLearn("Level");
-    }
 }

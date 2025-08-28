@@ -18,7 +18,7 @@ public abstract class StoneEvolutionMapper extends DefaultMapper<StoneEvolutionD
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "pokemons", ignore = true)
     @Mapping(target = "typeStoneEvolution", source = "typeStoneId", qualifiedByName = "KeyToTypeStoneEntity")
-    @Mapping(target = "typeEvolution",source = "typeEvolutionName", qualifiedByName = "KeyToTypeEvolutionEntity")
+    @Mapping(target = "typeEvolution", source = "typeEvolutionName",qualifiedByName = "KeyToTypeEvolutionEntity")
     public abstract StoneEvolutionEntity fromCreateDtoToEntity(StoneEvolutionCreateDto createDto);
 
     public abstract StoneEvolutionDto ToDto(StoneEvolutionEntity entity);
@@ -28,7 +28,7 @@ public abstract class StoneEvolutionMapper extends DefaultMapper<StoneEvolutionD
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "pokemons", ignore = true)
     @Mapping(target = "typeStoneEvolution", source = "typeStoneId", qualifiedByName = "KeyToTypeStoneEntity")
-    @Mapping(target = "typeEvolution",source = "typeEvolutionName", qualifiedByName = "KeyToTypeEvolutionEntity")
+    @Mapping(target = "typeEvolution", source = "typeEvolutionName",qualifiedByName = "KeyToTypeEvolutionEntity")
     public abstract StoneEvolutionEntity merge(@MappingTarget StoneEvolutionEntity entity, StoneEvolutionUpdateDto update);
 
 

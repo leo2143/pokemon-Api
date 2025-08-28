@@ -8,7 +8,7 @@ public class FormLearnDto {
 
     private Long id;
 
-    private String formLearn;
+    private TypeFormLearnDto typeLearnForm;
 
 
 }

@@ -27,4 +27,3 @@ insert into form_evolution values (26, 1);
 insert into form_evolution values (27, 1);
 insert into form_evolution values (28, 1);
 insert into form_evolution values (29, 1);
-ALTER TABLE form_evolution ALTER COLUMN id RESTART WITH 30;

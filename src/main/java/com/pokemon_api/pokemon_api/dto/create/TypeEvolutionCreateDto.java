@@ -4,9 +4,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 @Data
-public class FormLearnCreateDto {
+public class TypeEvolutionCreateDto {
 
-    private Long typeLearnFormId;
+    @JsonIgnore
+    private String typeEvolution;
 
 
 }

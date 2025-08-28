@@ -8,23 +8,21 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "movement_secondary_effects")
+@Table(name = "type_form_learn")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MovementsSecondaryEffectsEntity {
+public class TypeFormLearnEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "type_form_learn_id")
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "movements_id")
-    private MovementsEntity movements;
+    @Column(name = "type_learn")
+    private String typeLearn;
 
-    @ManyToOne
-    @JoinColumn(name = "secondary_effects_id")
-    private SecondaryEffectsEntity secondaryEffects;
+    @OneToMany(mappedBy = "typeLearnForm", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<FormLearnEntity> formLearn;
 
-    private int probability;
 }

@@ -44,7 +44,7 @@ public class PokemonEntity {
             inverseJoinColumns = @JoinColumn(name = "form_evolution_id")
 
     )
-    private List<FormEvolutionEntity> formEvolutions = new ArrayList<>();
+    private Set<FormEvolutionEntity> formEvolutions = new HashSet<>();
 
     @JoinColumn(name = "evolution_id")
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

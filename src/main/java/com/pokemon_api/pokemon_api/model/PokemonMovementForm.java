@@ -21,7 +21,7 @@ public class PokemonMovementForm {
     @Id
     @ManyToOne
     @JoinColumn(name = "id_movements")
-    private MovementsSecondaryEffectsEntity movementsSecondaryEffects;
+    private MovementsEntity movements;
 
     @Id
     @ManyToOne

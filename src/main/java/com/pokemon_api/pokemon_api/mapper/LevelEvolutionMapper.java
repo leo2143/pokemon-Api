@@ -11,12 +11,12 @@ import org.mapstruct.*;
 import java.util.List;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedTargetPolicy = ReportingPolicy.WARN,
-        uses = {TypeEvolutionMapperHelper.class})
+        uses = {TypeEvolutionMapperHelper.class , TypeEvolutionMapper.class})
 public abstract class LevelEvolutionMapper extends DefaultMapper<LevelEvolutionDto, LevelEvolutionEntity, LevelEvolutionCreateDto, LevelEvolutionUpdateDto> {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "pokemons", ignore = true)
-    @Mapping(target = "typeEvolution",source = "typeEvolutionName", qualifiedByName = "KeyToTypeEvolutionEntity")
+    @Mapping(target = "typeEvolution", source = "typeEvolutionName",qualifiedByName = "KeyToTypeEvolutionEntity")
     public abstract LevelEvolutionEntity fromCreateDtoToEntity(LevelEvolutionCreateDto createDto);
 
     public abstract LevelEvolutionDto ToDto(LevelEvolutionEntity entity);
@@ -25,7 +25,7 @@ public abstract class LevelEvolutionMapper extends DefaultMapper<LevelEvolutionD
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "pokemons", ignore = true)
-    @Mapping(target = "typeEvolution",source = "typeEvolutionName", qualifiedByName = "KeyToTypeEvolutionEntity")
+    @Mapping(target = "typeEvolution", source = "typeEvolutionName",qualifiedByName = "KeyToTypeEvolutionEntity")
     public abstract LevelEvolutionEntity merge(@MappingTarget LevelEvolutionEntity entity, LevelEvolutionUpdateDto update);
 
 
