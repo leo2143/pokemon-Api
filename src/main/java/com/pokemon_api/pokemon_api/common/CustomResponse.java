@@ -6,12 +6,12 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-public class CustomResponse {
+public class CustomResponse<D> {
 
     private int statusCode;
 
     private String message;
 
-    private Object data;
+    private D data;
 
 }

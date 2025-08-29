@@ -11,6 +11,7 @@ import com.pokemon_api.pokemon_api.repository.LevelEvolutionRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.springframework.http.ResponseEntity;
 
 
 @org.springframework.stereotype.Service
@@ -24,6 +25,12 @@ public class LevelEvolutionService extends DefaultService<LevelEvolutionDto, Lev
     private final LevelEvolutionMapper mapper;
 
     private final I18nUtil i18nUtil;
+
+    @Override
+    public ResponseEntity<?> create(LevelEvolutionCreateDto create) {
+        create.setTypeEvolutionName("Nivel");
+        return super.create(create);
+    }
 
     @Override
     public String getI8nMessage(String key, Object[] args) {

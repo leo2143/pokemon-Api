@@ -1,0 +1,24 @@
+-- Evoluciones por nivel
+INSERT INTO level_evolution VALUES (5, 7);
+INSERT INTO level_evolution VALUES (6, 10);
+INSERT INTO level_evolution VALUES (7, 16);
+INSERT INTO level_evolution VALUES (8, 18);
+INSERT INTO level_evolution VALUES (9, 20);
+INSERT INTO level_evolution VALUES (10, 22);
+INSERT INTO level_evolution VALUES (11, 32);
+INSERT INTO level_evolution VALUES (12, 36);
+INSERT INTO level_evolution VALUES (14, 21);
+INSERT INTO level_evolution VALUES (16, 24);
+INSERT INTO level_evolution VALUES (17, 31);
+INSERT INTO level_evolution VALUES (18, 26);
+INSERT INTO level_evolution VALUES (19, 28);
+INSERT INTO level_evolution VALUES (20, 33);
+INSERT INTO level_evolution VALUES (21, 25);
+INSERT INTO level_evolution VALUES (22, 30);
+INSERT INTO level_evolution VALUES (23, 40);
+INSERT INTO level_evolution VALUES (24, 37);
+INSERT INTO level_evolution VALUES (25, 34);
+INSERT INTO level_evolution VALUES (26, 38);
+INSERT INTO level_evolution VALUES (27, 35);
+INSERT INTO level_evolution VALUES (28, 42);
+INSERT INTO level_evolution VALUES (29, 55);

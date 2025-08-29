@@ -6,8 +6,7 @@ import lombok.Data;
 @Data
 public class FormLearnCreateDto {
 
-    @JsonIgnore
-    private String formLearn;
+    private Long typeLearnFormId;
 
 
 }

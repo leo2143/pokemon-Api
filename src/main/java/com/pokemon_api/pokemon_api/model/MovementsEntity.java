@@ -26,6 +26,7 @@ public class MovementsEntity {
     @Column(name = "precision_mov")
     private Long precisionMov;
 
+    @Column(length = 500)
     private String description;
 
     @OneToMany(mappedBy = "movements")
@@ -35,5 +36,8 @@ public class MovementsEntity {
 
     private int priority;
 
+    @ManyToOne
+    @JoinColumn(name = "type_id", nullable = false)
+    private TypeEntity type;
 
 }

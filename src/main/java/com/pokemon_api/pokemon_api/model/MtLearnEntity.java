@@ -19,8 +19,4 @@ public class MtLearnEntity extends FormLearnEntity {
 
     private String mt;
 
-    @PrePersist
-    public void prePersist() {
-        setFormLearn("MT");
-    }
 }

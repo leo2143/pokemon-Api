@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -31,8 +33,18 @@ public class PokemonEntity {
             name = "pokemon_types",
             joinColumns = @JoinColumn(name = "pokedex_number"),
             inverseJoinColumns = @JoinColumn(name = "types")
+
     )
     private Set<TypeEntity> types = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable(
+            name = "pokemon_form_evolution",
+            joinColumns = @JoinColumn(name = "pokedex_number"),
+            inverseJoinColumns = @JoinColumn(name = "form_evolution_id")
+
+    )
+    private Set<FormEvolutionEntity> formEvolutions = new HashSet<>();
 
     @JoinColumn(name = "evolution_id")
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
@@ -40,4 +52,8 @@ public class PokemonEntity {
 
     @Embedded
     private BaseStatisticsEntity baseStatistics;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "pokemon")
+    private List<PokemonMovementForm> pokemonMovementForms;
+
 }

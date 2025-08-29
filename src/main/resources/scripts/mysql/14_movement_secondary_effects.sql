@@ -1,0 +1,45 @@
+
+
+
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(3, 1, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(6, 1, 12.5);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(8, 1, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(11, 3, 100);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(14, 4, 20);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(17, 5, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(19, 5, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(20, 5, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(21, 5, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(23, 5, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(26, 6, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(27, 3, 100);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(28, 6, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(29, 6, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(30, 6, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(33, 7, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(34, 8, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(35, 8, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(36, 8, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(40, 9, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(41, 9, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(65, 2, 12.5);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(81, 9, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(82, 5, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(83, 2, 12.5);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(87, 9, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(95, 9, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(98, 9, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(107, 3, 100);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(117, 6, 20);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(117, 5, 20);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(117, 7, 20);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(124, 2, 12.5);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(141, 10, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(142, 11, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(149, 12, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(152, 11, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(155, 4, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(156, 4, 40);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(158, 4, 30);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(167, 1, 10);
+insert into movement_secondary_effects(movements_id,secondary_effects_id,probability) values(168, 10, 20);

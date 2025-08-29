@@ -18,14 +18,14 @@ services:
     depends_on:
       - mysql
     environment:
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create
       SPRING_PROFILES_ACTIVE: mysql
 
   mysql:
     image: mysql
     container_name: mysql_database
     environment:
-      MYSQL_ROOT_PASSWORD:
+      MYSQL_ROOT_PASSWORD: Leonardoorellana2
       MYSQL_DATABASE: PokemonApiDatabase
       MYSQL_USER: leonardo
       MYSQL_PASSWORD: Leonardoorellana2

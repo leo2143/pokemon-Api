@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "form_learn")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -17,5 +19,10 @@ public class FormLearnEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String formLearn;
+    @ManyToOne
+    @JoinColumn(name = "type_form_learn_id", nullable = false)
+    private TypeFormLearnEntity typeLearnForm;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "formLearn")
+    List<PokemonMovementForm> pokemonMovementForms;
 }

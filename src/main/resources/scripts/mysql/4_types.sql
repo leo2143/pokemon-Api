@@ -1,0 +1,17 @@
+-- Datos de tipos de Pokémon
+INSERT INTO types(name, type_attack_id) VALUES
+('Water', 2),
+('Bug', 1),
+('Dragon', 2),
+('Electric', 2),
+('Ghost', 1),
+('Fire', 2),
+('Ice', 2),
+('Fighting', 1),
+('Normal', 1),
+('Grass', 2),
+('Psychic', 2),
+('Rock', 1),
+('Ground', 1),
+('Poison', 1),
+('Flying', 1);
